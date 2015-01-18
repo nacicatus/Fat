@@ -13,7 +13,6 @@
 @end
 @implementation ViewController
 
-
 - (IBAction)dismissKeyboard:(UITextField *)sender
 {
     [heightField resignFirstResponder];
@@ -23,8 +22,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    
-}
+    }
 
 - (void)didReceiveMemoryWarning
 {
@@ -61,5 +59,6 @@
     [indexField setText: [NSString stringWithFormat:@"%.2f", bmi]];
     [meaningField setText:diagnosis];
 }
+
 
 @end

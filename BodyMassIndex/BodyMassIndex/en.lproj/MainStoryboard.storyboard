@@ -30,22 +30,27 @@
                                     <constraint firstAttribute="width" constant="72" id="mIy-oS-94D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
                                 <connections>
-                                    <action selector="dismissKeyboard:" destination="4" eventType="editingDidEnd" id="AD9-2d-HjM"/>
+                                    <action selector="dismissKeyboard:" destination="2" eventType="editingDidEndOnExit" id="00w-ef-qh8"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xG6-lU-7X5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" clearsOnBeginEditing="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xG6-lU-7X5">
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
-                                    <action selector="dismissKeyboard:" destination="4" eventType="editingDidEnd" id="2jn-fo-jsc"/>
+                                    <action selector="dismissKeyboard:" destination="2" eventType="editingDidEndOnExit" id="3as-eF-mcU"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlc-dW-eyf">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dlc-dW-eyf">
+                                <color key="backgroundColor" red="0.331447393463004" green="0.46389571925246054" blue="0.96964164402173914" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="192" id="g4G-RX-kz1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="tintColor" red="0.95847486410000005" green="0.95847486410000005" blue="0.95847486410000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Calculate BMI">
-                                    <color key="titleColor" red="0.41960787770000002" green="0.63529413940000001" blue="0.80000007149999997" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="titleColor" red="0.16063874988159144" green="0.44598048681282287" blue="0.97741168478260865" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <state key="highlighted">
@@ -58,8 +63,7 @@
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="18.50 - 24.99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="si9-gS-5dz">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="SiZ-VG-0Kd"/>
-                                    <constraint firstAttribute="width" constant="190" id="zAw-U6-VBG"/>
+                                    <constraint firstAttribute="height" constant="46" id="y8i-hd-os0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -67,8 +71,7 @@
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Normal Range" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wkv-a0-AMY">
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="178" id="fWW-K8-yXK"/>
-                                    <constraint firstAttribute="height" constant="36" id="hXt-l8-yFv"/>
+                                    <constraint firstAttribute="height" constant="53" id="zY9-fG-NdU"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -99,7 +102,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.2980629422263894" green="0.4763859582492978" blue="0.64238705842391308" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.73853423835510534" green="0.80239992261692961" blue="0.93246858016304346" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="fLJ-Vk-5Ra" firstAttribute="top" secondItem="3" secondAttribute="top" constant="112" id="1c5-J5-x9n"/>
                             <constraint firstItem="fP2-0W-XLX" firstAttribute="top" secondItem="3" secondAttribute="top" constant="80" id="378-wk-s2C"/>
@@ -109,22 +112,24 @@
                             <constraint firstItem="tNL-Xn-ISY" firstAttribute="top" secondItem="3" secondAttribute="top" constant="76" id="BEf-Y2-iP9"/>
                             <constraint firstItem="WDQ-fD-nN0" firstAttribute="leading" secondItem="3" secondAttribute="leading" type="default" id="BEn-un-b5e"/>
                             <constraint firstItem="uP3-9i-qJh" firstAttribute="top" secondItem="tNL-Xn-ISY" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="EGi-oU-KbT"/>
+                            <constraint firstItem="fLJ-Vk-5Ra" firstAttribute="trailing" secondItem="Dlc-dW-eyf" secondAttribute="trailing" type="default" id="EZW-Er-uPm"/>
+                            <constraint firstItem="Dlc-dW-eyf" firstAttribute="leading" secondItem="si9-gS-5dz" secondAttribute="leading" type="default" id="El5-GZ-Jit"/>
+                            <constraint firstItem="Wkv-a0-AMY" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="20" symbolic="YES" type="default" id="Iqk-x1-rdM"/>
                             <constraint firstItem="xG6-lU-7X5" firstAttribute="top" secondItem="3" secondAttribute="top" constant="110" id="LJ3-gS-hnp"/>
                             <constraint firstItem="LA8-hP-vIx" firstAttribute="leading" secondItem="tNL-Xn-ISY" secondAttribute="leading" type="default" id="Lqj-qp-mxr"/>
-                            <constraint firstItem="LA8-hP-vIx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="139" id="OEI-X2-HLm"/>
+                            <constraint firstItem="LA8-hP-vIx" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="139" id="Oia-xa-CjT"/>
+                            <constraint firstAttribute="trailing" secondItem="Wkv-a0-AMY" secondAttribute="trailing" constant="20" symbolic="YES" type="default" id="UFW-ap-JgB"/>
                             <constraint firstItem="si9-gS-5dz" firstAttribute="top" secondItem="Dlc-dW-eyf" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="XKD-XB-bvT"/>
+                            <constraint firstItem="Dlc-dW-eyf" firstAttribute="trailing" secondItem="si9-gS-5dz" secondAttribute="trailing" type="default" id="YcG-bm-KtV"/>
                             <constraint firstItem="WDQ-fD-nN0" firstAttribute="trailing" secondItem="3" secondAttribute="trailing" type="default" id="aJr-q3-A6p"/>
-                            <constraint firstAttribute="trailing" secondItem="fLJ-Vk-5Ra" secondAttribute="trailing" constant="75" id="bpP-2Q-SxS"/>
-                            <constraint firstItem="si9-gS-5dz" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="71" id="cwb-Xi-jOZ"/>
                             <constraint firstItem="tNL-Xn-ISY" firstAttribute="trailing" secondItem="xG6-lU-7X5" secondAttribute="trailing" type="default" id="fdM-jh-VXw"/>
-                            <constraint firstItem="fP2-0W-XLX" firstAttribute="leading" secondItem="3" secondAttribute="leading" constant="76" id="iUd-Sq-tY7"/>
+                            <constraint firstItem="Wkv-a0-AMY" firstAttribute="top" secondItem="si9-gS-5dz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="iLp-lC-jzR"/>
                             <constraint firstItem="QSS-hi-0pN" firstAttribute="baseline" secondItem="fP2-0W-XLX" secondAttribute="baseline" type="default" id="jNX-c1-t9N"/>
                             <constraint firstItem="WDQ-fD-nN0" firstAttribute="top" secondItem="3" secondAttribute="top" type="default" id="lPj-bL-IO5"/>
-                            <constraint firstItem="Dlc-dW-eyf" firstAttribute="centerX" secondItem="si9-gS-5dz" secondAttribute="centerX" type="default" id="nvS-lZ-Wle"/>
+                            <constraint firstItem="Dlc-dW-eyf" firstAttribute="leading" secondItem="uP3-9i-qJh" secondAttribute="leading" type="default" id="pF4-i5-vfj"/>
                             <constraint firstItem="xG6-lU-7X5" firstAttribute="leading" secondItem="tNL-Xn-ISY" secondAttribute="leading" type="default" id="sRq-Ib-mLw"/>
-                            <constraint firstItem="Wkv-a0-AMY" firstAttribute="top" secondItem="si9-gS-5dz" secondAttribute="bottom" constant="8" symbolic="YES" type="default" id="vXW-1o-QTN"/>
+                            <constraint firstItem="Wkv-a0-AMY" firstAttribute="centerX" secondItem="si9-gS-5dz" secondAttribute="centerX" type="default" id="tEk-fv-0mt"/>
                             <constraint firstItem="uP3-9i-qJh" firstAttribute="leading" secondItem="fP2-0W-XLX" secondAttribute="leading" type="default" id="wBZ-3E-2ye"/>
-                            <constraint firstItem="Wkv-a0-AMY" firstAttribute="centerX" secondItem="si9-gS-5dz" secondAttribute="centerX" type="default" id="wcl-9k-HFY"/>
                         </constraints>
                     </view>
                     <connections>

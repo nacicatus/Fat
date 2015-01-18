@@ -25,6 +25,7 @@
 		CB27C00C1A6990B0007CD52B /* BodyMassIndexTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CB27C00B1A6990B0007CD52B /* BodyMassIndexTests.m */; };
 		CB27C0161A699141007CD52B /* who_logo_en.gif in Resources */ = {isa = PBXBuildFile; fileRef = CB27C0151A699141007CD52B /* who_logo_en.gif */; };
 		CB27C0191A6991C8007CD52B /* Indexer.m in Sources */ = {isa = PBXBuildFile; fileRef = CB27C0181A6991C8007CD52B /* Indexer.m */; };
+		CB3840701A6B9373005AB5F1 /* apple-touch-icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CB38406F1A6B9373005AB5F1 /* apple-touch-icon.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		CB27C0151A699141007CD52B /* who_logo_en.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = who_logo_en.gif; sourceTree = "<group>"; };
 		CB27C0171A6991C8007CD52B /* Indexer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Indexer.h; sourceTree = "<group>"; };
 		CB27C0181A6991C8007CD52B /* Indexer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Indexer.m; sourceTree = "<group>"; };
+		CB38406F1A6B9373005AB5F1 /* apple-touch-icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apple-touch-icon.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +94,7 @@
 		CB27BFCE1A6990B0007CD52B = {
 			isa = PBXGroup;
 			children = (
+				CB38406F1A6B9373005AB5F1 /* apple-touch-icon.png */,
 				CB27BFE01A6990B0007CD52B /* BodyMassIndex */,
 				CB27C0041A6990B0007CD52B /* BodyMassIndexTests */,
 				CB27BFD91A6990B0007CD52B /* Frameworks */,
@@ -245,6 +248,7 @@
 				CB27BFF11A6990B0007CD52B /* Default-568h@2x.png in Resources */,
 				CB27BFF41A6990B0007CD52B /* MainStoryboard.storyboard in Resources */,
 				CB27C0161A699141007CD52B /* who_logo_en.gif in Resources */,
+				CB3840701A6B9373005AB5F1 /* apple-touch-icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,6 +467,7 @@
 				CB27C0111A6990B0007CD52B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CB27C0121A6990B0007CD52B /* Build configuration list for PBXNativeTarget "BodyMassIndexTests" */ = {
 			isa = XCConfigurationList;
@@ -471,6 +476,7 @@
 				CB27C0141A6990B0007CD52B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
